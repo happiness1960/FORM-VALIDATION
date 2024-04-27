@@ -49,6 +49,8 @@ function checkInputs() {
 
     if (password2.value != password.value) {
         setError(password2, "Password does not match")
+    } else if (passwordVal2 === "") {
+        setError(password2, "Password can not be empy")
     } else {
         setSuccess(password2, "Password match")
     }
